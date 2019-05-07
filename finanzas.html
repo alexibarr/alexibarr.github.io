@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Checkout example for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="bank.png" width="72" height="72">
+        <h2>Personal Finance Calculator</h2>
+        <p class="lead">Subtítulo explicando que verga esta esta maquinación</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Tu Ahorro Potencial</span>
+            <span class="badge badge-secondary badge-pill">$</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" id="AW">A</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted" id="save-a">$0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" id="BW">B</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted" id="save-b">$0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" id="CW">C</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted" id="save-c">$0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0" id="DW">D</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted" id="save-d">$0</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total</span>
+              <strong id="total-saved">$0</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Gastos Mensuales</h4>
+          <form class="needs-validation" novalidate>
+
+            <div class="row" style="margin-bottom: 5px">
+              <div class="col-md-3"> 
+                            <label>Producto / Servicio</label>
+                  <input type="text" class="form-control" placeholder="Producto/Servicio" id="aProduct">
+              </div>
+              <div class="col-md-3">
+                            <label>Precio</label>
+                  <input type="text" class="form-control" placeholder="Precio" id="aPrice">
+              </div>
+              <div class="col-md-3">
+                            <label>Cantidad Actual</label>
+                  <input type="text" class="form-control" placeholder="Cantidad Actual" id="aX">
+              </div>
+              <div class="col-md-3">
+                            <label>Cantidad Deseada</label>
+                  <input type="text" class="form-control" placeholder="Cantidad Deseada" id="aY">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 5px">
+              <div class="col-md-3"> 
+                  <input type="text" class="form-control" placeholder="Producto/Servicio" id="bProduct">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Precio" id="bPrice">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Cantidad Actual" id="bX">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Cantidad Deseada" id="bY">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 5px">
+              <div class="col-md-3"> 
+                  <input type="text" class="form-control" placeholder="Producto/Servicio" id="cProduct">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Precio" id="cPrice">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Cantidad Actual" id="cX">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Cantidad Deseada" id="cY">
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 5px">
+              <div class="col-md-3"> 
+                  <input type="text" class="form-control" placeholder="Producto/Servicio" id="dProduct">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Precio" id="dPrice">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Cantidad Actual" id="dX">
+              </div>
+              <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Cantidad Deseada" id="dY">
+              </div>
+            </div>
+            <hr>
+            <input class="btn btn-info btn-lg btn-block" onclick="calculate()" placeholder="CALCULAR" style="color:white">
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p>Indicaciones:
+Es muy sencillo, coloca el precio del producto en la casilla. Posteriormente indica cuantas veces a la semana consumes ese producto actualmente, para calcular el gasto que este implica. Finaliza colocando tu nueva meta de consumo. Observa que en la casilla de “TOTAL” arroja la cantidad ahorrada por cada producto que coloques.
+Las finanzas personales, es trazar una ruta que nos llevara a un objetivo, desde donde nos encontramos actualmente. Muchas personas en México no tienen claras sus finanzas personales, ni sus prioridades, por lo que no encontraran ese objetivo que tanto desean.
+Establecer el objetivo implica, seguir ciertas reglas autoimpuestas que te evitaran tomar decisiones como endeudarse, posponer el ahorro para el retiro o sacrificar necesidades básicas por ropa exageradamente cara, fuera de tus posibilidades económicas.
+A continuación, hay una lista con la cual no promovemos el gasto, si no hacer percatar al usuario con su ahorro, las cosas que puede alcanzar.
+
+Boletos de avión (Madrid) …..14’000
+Fin de semana con tu pareja………. 2000
+Bicileta de alta gama…………… 3000
+Comprar likes en instagram………....  1000
+Renta de un departamento………… 4,50
+Si deseas invertir tu dinero en un fondo de ahorro, te recomendamos la siguiente pagina web, a la cual no estamos asociados
+</p>
+        <p class="mb-1">&copy; 2019 ASDRUBAL PRODUCSHIONS</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Link Opcional A</a></li>
+          <li class="list-inline-item"><a href="#">Link Opcional B</a></li>
+          <li class="list-inline-item"><a href="#">Link Opcional C</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      function calculate(){
+        var aProduct = document.getElementById('aProduct').value
+        var aPrice = document.getElementById('aPrice').value
+        var aX = document.getElementById('aX').value
+        var aY = document.getElementById('aY').value
+
+        var bProduct = document.getElementById('bProduct').value
+        var bPrice = document.getElementById('bPrice').value
+        var bX = document.getElementById('bX').value
+        var bY = document.getElementById('bY').value
+
+        var cProduct = document.getElementById('cProduct').value
+        var cPrice = document.getElementById('cPrice').value
+        var cX = document.getElementById('cX').value
+        var cY = document.getElementById('cY').value
+
+        var dProduct = document.getElementById('dProduct').value
+        var dPrice = document.getElementById('dPrice').value
+        var dX = document.getElementById('dX').value
+        var dY = document.getElementById('dY').value
+
+        var aSaves = (parseInt(aPrice) * parseInt(aX)) - (parseInt(aPrice) * parseInt(aY))
+        console.log(aPrice)
+        var bSaves = (bPrice * bX) - (bPrice * bY)
+        var cSaves = (cPrice * cX) - (cPrice * cY)
+        var dSaves = (dPrice * dX) - (dPrice * dY)
+
+        document.getElementById('save-a').innerHTML = aSaves
+        document.getElementById('save-b').innerHTML = bSaves
+        document.getElementById('save-c').innerHTML = cSaves
+        document.getElementById('save-d').innerHTML = dSaves
+        document.getElementById('total-saved').innerHTML = (aSaves + bSaves + cSaves + dSaves)
+        document.getElementById('AW').innerHTML = document.getElementById('aProduct').value
+        document.getElementById('BW').innerHTML = document.getElementById('bProduct').value
+        document.getElementById('CW').innerHTML = document.getElementById('cProduct').value
+        document.getElementById('DW').innerHTML = document.getElementById('dProduct').value
+
+      }
+
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
